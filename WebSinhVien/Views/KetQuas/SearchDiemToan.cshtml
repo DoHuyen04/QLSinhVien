@@ -1,0 +1,48 @@
+﻿@model IEnumerable<WebSinhVien.Models.KetQua>
+
+@{
+    ViewData["Title"] = "SearchDiemToan";
+}
+
+<h1>SearchDiemToan</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+    <a asp-action="SearchDiemToan">Search</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.masv)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.monhoc)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.diem)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.masv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.monhoc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.diem)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.makq">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.makq">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.makq">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

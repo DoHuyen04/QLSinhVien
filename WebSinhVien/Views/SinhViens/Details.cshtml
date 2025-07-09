@@ -1,0 +1,42 @@
+﻿@model WebSinhVien.Models.SinhVien
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>SinhVien</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.tensv)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.tensv)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ngaysinh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ngaysinh)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.gioitinh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.gioitinh)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.lop)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.lop)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.masv">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

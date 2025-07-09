@@ -1,0 +1,36 @@
+﻿@model WebSinhVien.Models.KetQua
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>KetQua</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.masv)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.masv)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.monhoc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.monhoc)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.diem)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.diem)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.makq">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
