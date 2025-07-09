@@ -15,3 +15,4 @@ namespace WebSinhVien.Models
         public float diem { get; set; }
     }
 }
+

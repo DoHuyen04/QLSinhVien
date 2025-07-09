@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WebSinhVien")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76754b7fbdc23c7db87d0d33fd9348f58116bd18")]
 [assembly: System.Reflection.AssemblyProductAttribute("WebSinhVien")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WebSinhVien")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
